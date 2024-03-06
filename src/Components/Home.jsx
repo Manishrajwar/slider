@@ -8,7 +8,7 @@ import Pic5 from "../Assets/images/about/about-1.jpg";
 import Pic6 from "../Assets/images/shapes/about-right-shape.svg";
 import Pic7 from "../Assets/images/shapes/about-left-shape.svg";
 import Pic8 from "../Assets/images/shapes/service-left-shape.svg";
-import Pic9 from "../Assets/images/shapes/service-item-shape.svg";
+// import Pic9 from "../Assets/images/shapes/service-item-shape.svg";
 import Pic10 from "../Assets/images/steps/steps-1.jpg";
 import Pic11 from "../Assets/images/shapes/steps-right-shape.svg";
 import Pic12 from "../Assets/images/steps/steps-2.jpg";
@@ -35,10 +35,10 @@ import pic32 from "../Assets/images/logos/secondary-logo.png";
 import pic33 from "../Assets/images/shapes/footer-left-shape.svg";
 import pic34 from "../Assets/images/shapes/footer-right-shape.svg";
 import pic35 from "../Assets/images/steps/steps-3.jpg";
-import piccarouel1 from "../Assets/images/portfolio/portfolio-1.jpg";
-import piccarouel2 from "../Assets/images/portfolio/portfolio-2.jpg";
-import piccarouel3 from "../Assets/images/portfolio/portfolio-3.jpg";
-import piccarouel4 from "../Assets/images/portfolio/portfolio-4.jpg";
+// import piccarouel1 from "../Assets/images/portfolio/portfolio-1.jpg";
+// import piccarouel2 from "../Assets/images/portfolio/portfolio-2.jpg";
+// import piccarouel3 from "../Assets/images/portfolio/portfolio-3.jpg";
+// import piccarouel4 from "../Assets/images/portfolio/portfolio-4.jpg";
 
 // import { IconName } from 'react-icons/icon-library'; // Import the icon component
 
@@ -55,30 +55,30 @@ import piccarouel4 from "../Assets/images/portfolio/portfolio-4.jpg";
 //       <link rel="stylesheet" href="assets/css/main.css" />
 
 const Home = () => {
-  const item = [
-    {
-      image: "../Assets/images/portfolio/portfolio-1.jpg",
-      title: "Aurthur Barry",
-      subtitle: "Sugar, Distillery",
-    },
-    {
-      image: "../Assets/images/portfolio/portfolio-2.jpg",
-      title: "Bradley",
-      subtitle: "Cement, Petrochemical",
-    },
-    {
-      image: "../Assets/images/portfolio/portfolio-3.jpg",
-      title: "Louis Miller",
-      subtitle: "Sugar, Petrochemical",
-    },
-    {
-      image: "../Assets/images/portfolio/portfolio-4.jpg",
-      title: "Grey George",
-      subtitle: "Sugar, Cement",
-    },
-  ];
+  // const item = [
+  //   {
+  //     image: "../Assets/images/portfolio/portfolio-1.jpg",
+  //     title: "Aurthur Barry",
+  //     subtitle: "Sugar, Distillery",
+  //   },
+  //   {
+  //     image: "../Assets/images/portfolio/portfolio-2.jpg",
+  //     title: "Bradley",
+  //     subtitle: "Cement, Petrochemical",
+  //   },
+  //   {
+  //     image: "../Assets/images/portfolio/portfolio-3.jpg",
+  //     title: "Louis Miller",
+  //     subtitle: "Sugar, Petrochemical",
+  //   },
+  //   {
+  //     image: "../Assets/images/portfolio/portfolio-4.jpg",
+  //     title: "Grey George",
+  //     subtitle: "Sugar, Cement",
+  //   },
+  // ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // const [currentIndex, setCurrentIndex] = useState(0);
 
   // const goToPrevSlide = () => {
   //   console.log("hello");
@@ -257,7 +257,7 @@ const Home = () => {
                         </ul>
                       </li>
                       <li className="has-dropdown">
-                        <a href="javascript:void(0)">Pages</a>
+                      <a href="#">Pages</a>
                         <ul className="sub-menu">
                           <li className="has-dropdown">
                             <a href="">Projects</a>
@@ -378,7 +378,7 @@ const Home = () => {
                         </ul>
                       </li>
                       <li className="has-dropdown">
-                        <a href="javascript:void(0)">Pages</a>
+                        <a href="#">Pages</a>
                         <ul className="sub-menu">
                           <li className="has-dropdown">
                             <a href="project.html">Projects</a>
@@ -598,13 +598,14 @@ const Home = () => {
                     </div>
                   </div>
                   <div className="left-image">
-                    <img src={Pic4} alt="Image" />
-                  </div>
+    <img src={Pic4} alt="" />
+</div>
+
                   <div className="right-image">
-                    <img src={Pic5} alt="Image" />
+                    <img src={Pic5} alt="" />
                   </div>
                   <div className="about-shape">
-                    <img src={Pic2} alt="Shape" />
+                    <img src={Pic2} alt="" />
                   </div>
                 </div>
               </div>
@@ -1601,7 +1602,7 @@ const Home = () => {
                           <div className="swiper-slide testimonial-auother">
 
                             <div className="thumb-image">
-                              <img src={Pic16} alt="Image" />
+                              <img src={Pic16} alt="" />
                               <div className="quote-icon">
                                 <img src={pic17} alt="Icon" />
                               </div>
@@ -1722,7 +1723,7 @@ const Home = () => {
                           <div className="swiper-slide testimonial-auother">
 
                             <div className="thumb-image">
-                              <img src={Pic16} alt="Image" />
+                              <img src={Pic16} alt="" />
                               <div className="quote-icon">
                                 <img src={pic17} alt="Icon" />
                               </div>
@@ -1843,7 +1844,7 @@ const Home = () => {
                           <div className="swiper-slide testimonial-auother">
 
                             <div className="thumb-image">
-                              <img src={Pic16} alt="Image" />
+                              <img src={Pic16} alt="" />
                               <div className="quote-icon">
                                 <img src={pic17} alt="Icon" />
                               </div>
@@ -1964,7 +1965,7 @@ const Home = () => {
                           <div className="swiper-slide testimonial-auother">
 
                             <div className="thumb-image">
-                              <img src={Pic16} alt="Image" />
+                              <img src={Pic16} alt="" />
                               <div className="quote-icon">
                                 <img src={pic17} alt="Icon" />
                               </div>
@@ -2805,55 +2806,3 @@ export default Home;
 
 
 
-
-            {/* <div className="swiper-slide testimonial-auother">
-                              <div className="thumb-image">
-                                <img src={Pic16} alt="Image" />
-                                <div className="quote-icon">
-                                  <img src={pic17} alt="Icon" />
-                                </div>
-                              </div>
-                              <div className="testimonial-name">
-                                <h3 className="title">David,</h3>
-                                <span className="sub-title">Desinger</span>
-                              </div>
-                              <div className="testimonial-info">
-                                <div className="testimonial-rating">
-                                  <div className="star-ratings">
-                                    <div className="fill-ratings">
-                                      <span>★★★★★</span>
-                                    </div>
-                                    <div className="empty-ratings">
-                                      <span>★★★★★</span>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div className="testimonial-socials">
-                                  <ul className="dot-style">
-                                    <li>
-                                      <a href="#">
-                                        <i className="bi bi-twitter-x"></i>
-                                      </a>
-                                    </li>
-                                    <li>
-                                      <a href="#">
-                                        <i className="bi bi-whatsapp"></i>
-                                      </a>
-                                    </li>
-                                    <li>
-                                      <a href="#">
-                                        <i className="bi bi-instagram"></i>
-                                      </a>
-                                    </li>
-                                    <li>
-                                      <a href="#">
-                                        <i className="bi bi-facebook"></i>
-                                      </a>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div> */}
-
-
-                            // these are section s
