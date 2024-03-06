@@ -3721,7 +3721,7 @@ START: About CSS
   display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: end;
+          align-items: flex-end;
   -webkit-column-gap: 24px;
      -moz-column-gap: 24px;
           column-gap: 24px;
@@ -3876,7 +3876,7 @@ START: About CSS
 }
 
 .about-images-two {
-  text-align: end;
+  text-align:end;
   position: relative;
   z-index: 1;
 }
@@ -4084,7 +4084,7 @@ START: Service CSS
   display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: end;
+          align-items: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -5106,10 +5106,10 @@ START: Step CSS
   display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: end;
+          align-items: flex-end;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
   gap: 24px;
 }
 .steps-images .left-image {
@@ -6625,7 +6625,7 @@ transform:translateX(0px);
       flex-wrap: wrap;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: end;
+          align-items: flex-end;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -7497,7 +7497,7 @@ START: Blog CSS
       flex-wrap: wrap;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: end;
+          align-items: flex-end;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -8107,7 +8107,7 @@ START: Newsletter CSS
   display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: end;
+          align-items: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 15px;
@@ -8939,7 +8939,7 @@ START: Project CSS
       flex-wrap: wrap;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: end;
+          align-items: flex-end;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -9356,7 +9356,7 @@ START: Team CSS
       flex-wrap: wrap;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: end;
+          align-items: flex-end;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -11349,7 +11349,7 @@ START: Theme Blog CSS
       flex-wrap: wrap;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: end;
+          align-items: flex-end;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -12655,4 +12655,3 @@ START: Theme Footer CSS
   }
 }
 
-/* !END: Theme Footer CSS *//*# sourceMappingURL=main.css.map */
