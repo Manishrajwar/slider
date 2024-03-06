@@ -1,0 +1,141 @@
+.swiper-wrapper{
+    /* display: flex;
+    justify-content: center; */
+}
+
+.swiper-slide{
+    /* padding-right: 20px; */
+}
+.tj-hero-section{
+    background-image: url(./Assets/images/slider/slider-1.jpg);
+    /* background-repeat: no-repeat;
+    background-position: center; */
+}
+
+.tj-analysis-section{
+    background-image: url(./Assets/images/bg/analysis-bg.jpg);
+    /* background-repeat: no-repeat;
+    background-position: center; */
+}
+
+.swiper-slide{
+    /* background-image: url(./Assets/images/portfolio/portfolio-1.jpg); */
+}
+
+.dineshborder{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dineshImage{
+    background-image: url(./Assets/images/portfolio/portfolio-1.jpg);
+        background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dineshImage12{
+    background-image: url(./Assets/images/portfolio/portfolio-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.dineshImage13{
+    background-image: url(./Assets/images/portfolio/portfolio-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dineshImage14{
+    background-image: url(./Assets/images/portfolio/portfolio-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ssWrpa {
+    overflow-x: auto; 
+    white-space: nowrap; 
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+    overflow: -moz-scrollbars-none; 
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+  }
+
+  .ssWrpa::-webkit-scrollbar {
+    width: 0;
+  }
+  
+
+
+.swiper-slide {
+    display: inline-block; 
+    vertical-align: top; 
+    margin-right: 10px;
+    white-space: normal; 
+    max-width: calc(100% - 10px);
+  }
+.dineshwidth{
+    /* width: 50%; */
+    min-width: 312px;
+    max-width: 320px;
+    margin: 10px;
+}
+
+.dineshwidth12{
+    width: 100%;
+}
+
+.portfolio_dinesh{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 55px;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.3);
+    gap: 30px;
+    font-weight: var(--tj-fw-regular);
+    /* position: absolute; */
+    top: -15px;
+    right: 0;
+    z-index: 2;
+}
+
+.dineshSilder{
+    display: flex;
+    justify-content: center;
+}
+
+.dineshsubsilder1{
+ margin-right: 20px;
+}
+
+.dineshsubsilder2{
+margin-right: 20px;
+}
+
+.dineshsubsilder3{
+margin-right: 20px;
+}
+
+.dinesh-pagination{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.dineshBackImages{
+    background-image: url(./Assets/images/bg/service-bg.jpg);
+}
+
+.active{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .unactive{
+    display: none;
+  }
+
+.bottomtotop{
+    /* border: 1px solid red; */
+}
