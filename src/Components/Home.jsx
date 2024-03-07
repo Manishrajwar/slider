@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import Slider from "react-slick";
-import Pic1 from "../Assets/images/logos/primary-logo.png";
+// import Pic1 from "../Assets/images/logos/primary-logo.png";
 import Pic2 from "../Assets/images/shapes/about-image-shape2.svg";
 import Pic3 from "../Assets/images/shapes/circle-shape.svg";
 import Pic4 from "../Assets/images/about/about-2.jpg";
@@ -205,12 +205,13 @@ const Home = () => {
             <div className="row">
               <div className="col-12">
                 <div className="mainmenu-wrapper">
-                  {/* <div className="site-logo"> */}
-                    {/* <a className="logo" href=""> */}
-                      <img src={Pic1} width={200} style={{padding:"10px 0px"}} alt="Logo" />
-                      {/* <img src="assets/images/logos/primary-logo.png" alt="Logo" /> */}
-                    {/* </a> */}
-                  {/* </div> */}
+
+                  <div className="anchrollogo">
+                    <a className="" href="">
+                      <span className="iconcUT">IRON CUT</span>
+                    </a>
+                  </div>
+
                   <div className="mainmenu main-mobile-menu d-none d-lg-inline-block">
                     {/* navitems */}
                     <ul>        
@@ -476,6 +477,7 @@ const Home = () => {
                 <div className="swiper tj-service-slider">
                   <div className="swiper-wrapper ">
                     <Slider {...settings}>
+                      
                       <div className="slider-slide">
                         <div className="swiper-wrapper dineshSilder">
                           <div className="swiper-slide dineshsubsilder1">
@@ -531,6 +533,7 @@ const Home = () => {
                           </div>
                         </div>
                       </div>
+
                       <div className="slider-slide">
                         <div className="swiper-wrapper dineshSilder">
                           <div className="swiper-slide dineshsubsilder1">
@@ -586,6 +589,7 @@ const Home = () => {
                           </div>
                         </div>
                       </div>
+
                       <div className="slider-slide">
                         <div className="swiper-wrapper dineshSilder">
                           <div className="swiper-slide dineshsubsilder1">
@@ -641,6 +645,7 @@ const Home = () => {
                           </div>
                         </div>
                       </div>
+
                     </Slider>
                   </div>
                 </div>
@@ -1905,10 +1910,25 @@ const Home = () => {
           </div>
 
 
+          <div className="twoTestBtns">
+
+          <i onClick={()=>{
+            if(activeContainerIndex > 0){
+                            setActiveContainerIndex((prev)=>prev-1);
+            }
+          }} class="bi bi-arrow-left-circle-fill"></i>
+
+<i onClick={()=>{
+            if(activeContainerIndex < totalContainers-1){
+              setActiveContainerIndex((prev)=>prev+1);
+            }
+          }} class="bi bi-arrow-right-circle-fill"></i>
+          </div>
           
           <div className="testimonial-sec-top-shape">
                             <img src={pic18} alt="Images" />
                           </div>
+
                           <div className="testimonial-sec-bottom-shape">
                             <img src={pic19} alt="Images" />
                           </div>

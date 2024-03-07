@@ -71,7 +71,8 @@
     vertical-align: top; 
     margin-right: 10px;
     white-space: normal; 
-    max-width: calc(100% - 10px);
+    max-width: 400px;
+    width: 100%;
   }
 .dineshwidth{
     /* width: 50%; */
@@ -102,6 +103,7 @@
 .dineshSilder{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .dineshsubsilder1{

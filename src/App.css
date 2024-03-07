@@ -142,6 +142,19 @@ START: Theme Default CSS
           box-sizing: border-box;
 }
 
+
+.iconcUT{
+  font-weight: 700;
+  font-size: 26px;
+  color: white;
+}
+
+.anchrollogo{
+  background-color:#fc5828 ;
+  padding:5px 20px;
+  margin: 10px 0px;
+}
+
 /**
   Typography CSS
 */
@@ -914,6 +927,7 @@ START: Header CSS
 }
 .tj-header-area.header-2 .mainmenu-area .mainmenu-wrapper .site-logo {
   max-width: 300px;
+  width: 100%;
   position: relative;
   z-index: 1;
 }
@@ -5943,22 +5957,61 @@ START: Portfolio CSS
 START: Testimonial CSS
 ----------------------------------------*/
 .tj-testimonial-section {
-   padding-top: 120px;
-  padding-bottom: 120px;
+   padding: 120px 10px;
   position: relative;
   display: flex;
   align-items: center;
   max-width: 1440px;
-  gap: 20px;
+  gap: 10px;
+  justify-content: space-between;
   margin: 0 auto;
   z-index: 2; 
   overflow-x: auto; 
   white-space: nowrap; 
 }
+.tj-testimonial-section::-webkit-scrollbar {
+  width: 0;
+} 
+
+@media (max-width:450px) {
+  .tj-testimonial-section {
+   display: flex;
+   flex-direction: column;
+
+ }
+ 
+}
+
+
+.testLeftIcon{
+  display: block;
+}
+
+.twoTestBtns{
+  display: none;
+}
+
 
 .testLeftIcon i{
+
   font-size: 50px;
   cursor: pointer;
+
+}
+
+@media (max-width:450px) {
+  .testLeftIcon{
+    display: none;
+  }
+
+  .twoTestBtns{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .twoTestBtns i{
+  font-size: 40px;
+  }
 }
 
 .allSwContainer{
@@ -12658,4 +12711,5 @@ START: Theme Footer CSS
     text-align: center;
   }
 }
+
 
