@@ -3752,6 +3752,10 @@ START: About CSS
   bottom: 0;
   max-width: 395px;
   width: 100%;
+
+}
+.about-images .right-image img {
+ width: 100%;
 }
 .about-images .about-circle {
   position: absolute;

@@ -35,6 +35,7 @@ import pic32 from "../Assets/images/logos/secondary-logo.png";
 import pic33 from "../Assets/images/shapes/footer-left-shape.svg";
 import pic34 from "../Assets/images/shapes/footer-right-shape.svg";
 import pic35 from "../Assets/images/steps/steps-3.jpg";
+
 // import piccarouel1 from "../Assets/images/portfolio/portfolio-1.jpg";
 // import piccarouel2 from "../Assets/images/portfolio/portfolio-2.jpg";
 // import piccarouel3 from "../Assets/images/portfolio/portfolio-3.jpg";
@@ -204,129 +205,39 @@ const Home = () => {
             <div className="row">
               <div className="col-12">
                 <div className="mainmenu-wrapper">
-                  <div className="site-logo">
-                    <a className="logo" href="">
-                      <img src={Pic1} alt="Logo" />
+                  {/* <div className="site-logo"> */}
+                    {/* <a className="logo" href=""> */}
+                      <img src={Pic1} width={200} style={{padding:"10px 0px"}} alt="Logo" />
                       {/* <img src="assets/images/logos/primary-logo.png" alt="Logo" /> */}
-                    </a>
-                  </div>
+                    {/* </a> */}
+                  {/* </div> */}
                   <div className="mainmenu main-mobile-menu d-none d-lg-inline-block">
-                    <ul>
-                      <li className="has-dropdown current-menu-item">
-                        <a href="">
-                          Home
-                          {/* <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="16"
-                            height="16"
-                            fill="currentColor"
-                            className="bi bi-chevron-down"
-                            viewBox="0 0 16 16"
-                          >
-                            <path
-                              fill-rule="evenodd"
-                              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
-                            />
-                          </svg> */}
-                        </a>
-
-                        <ul className="sub-menu">
-                          <li className="current-menu-item">
-                            <a href="">Home One</a>
-                          </li>
-                          <li>
-                            <a href="">Home Two</a>
-                          </li>
-                          <li>
-                            <a href="">Home Three</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="">About Us</a>
-                      </li>
-                      <li className="has-dropdown">
-                        <a href="">Services</a>
-                        <ul className="sub-menu">
-                          <li>
-                            <a href="">Services</a>
-                          </li>
-                          <li>
-                            <a href="service-details.html">Service Details</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className="has-dropdown">
-                      <a href="#">Pages</a>
-                        <ul className="sub-menu">
-                          <li className="has-dropdown">
-                            <a href="">Projects</a>
-                            <ul className="sub-menu">
-                              <li>
-                                <a href="">Projects</a>
-                              </li>
-                              <li>
-                                <a href="">Project Details</a>
-                              </li>
-                            </ul>
-                          </li>
-                          <li>
-                            <a href="">Team</a>
-                          </li>
-                          <li>
-                            <a href="">Team Details</a>
-                          </li>
-                          <li>
-                            <a href="">Pricing Plan</a>
-                          </li>
-                          <li>
-                            <a href="faq.html">Faq</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className="has-dropdown">
-                        <a href="">Blog</a>
-                        <ul className="sub-menu">
-                          <li>
-                            <a href="blog-grid.html">Blog Grid</a>
-                          </li>
-                          <li>
-                            <a href="">Blog Standard</a>
-                          </li>
-                          <li>
-                            <a href="blog-details.html">Blog Details</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="">Contact Us</a>
-                      </li>
+                    {/* navitems */}
+                    <ul>        
                     </ul>
                   </div>
                   
                   <div className="mainmenu-right">
-                    <div className="header-search d-none d-xl-inline-block">
+                    {/* <div className="header-search d-none d-xl-inline-block">
                       <button className="search">
-                        {/* <i className="fa-light fa-magnifying-glass"></i> */}
                         <i className="bi bi-search"></i>
                       </button>
-                    </div>
+                    </div> */}
                     <div className="header-button d-none d-md-inline-block">
                       <a className="tj-primary-btn" href="contact.html">
-                        Request a Quote
-                        {/* <i className="fa-light fa-arrow-right-from-line"></i> */}
+                      Login
                         <i className="bi bi-arrow-bar-right"></i>
                       </a>
                     </div>
                   </div>
-                  <div className="menu-bar d-lg-none">
+                  {/* <div className="menu-bar d-lg-none">
                     <button>
                       <span></span>
                       <span></span>
                       <span></span>
                       <span></span>
                     </button>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -349,106 +260,30 @@ const Home = () => {
                     </a>
                   </div>
                   <div className="mainmenu d-none d-lg-inline-block">
-                    <ul>
-                      <li className="has-dropdown current-menu-item">
-                        <a href="index.html">Home</a>
-                        <ul className="sub-menu">
-                          <li className="current-menu-item">
-                            <a href="index.html">Home One</a>
-                          </li>
-                          <li>
-                            <a href="index-2.html">Home Two</a>
-                          </li>
-                          <li>
-                            <a href="index-3.html">Home Three</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="about.html">About Us</a>
-                      </li>
-                      <li className="has-dropdown">
-                        <a href="service.html">Services</a>
-                        <ul className="sub-menu">
-                          <li>
-                            <a href="service.html">Services</a>
-                          </li>
-                          <li>
-                            <a href="service-details.html">Service Details</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className="has-dropdown">
-                        <a href="#">Pages</a>
-                        <ul className="sub-menu">
-                          <li className="has-dropdown">
-                            <a href="project.html">Projects</a>
-                            <ul className="sub-menu">
-                              <li>
-                                <a href="project.html">Projects</a>
-                              </li>
-                              <li>
-                                <a href="project-details.html">
-                                  Project Details
-                                </a>
-                              </li>
-                            </ul>
-                          </li>
-                          <li>
-                            <a href="team.html">Team</a>
-                          </li>
-                          <li>
-                            <a href="team-details.html">Team Details</a>
-                          </li>
-                          <li>
-                            <a href="price.html">Pricing Plan</a>
-                          </li>
-                          <li>
-                            <a href="faq.html">Faq</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className="has-dropdown">
-                        <a href="blog.html">Blog</a>
-                        <ul className="sub-menu">
-                          <li>
-                            <a href="blog-grid.html">Blog Grid</a>
-                          </li>
-                          <li>
-                            <a href="blog.html">Blog Standard</a>
-                          </li>
-                          <li>
-                            <a href="blog-details.html">Blog Details</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="contact.html">Contact Us</a>
-                      </li>
-                    </ul>
+                  {/* small screen navitems */}
                   </div>
                   <div className="mainmenu-right">
-                    <div className="header-search d-none d-xl-inline-block">
+                    {/* <div className="header-search d-none d-xl-inline-block">
                       <button className="search">
                         <i className="fa-light fa-magnifying-glass"></i>
                       </button>
-                    </div>
+                    </div> */}
                     <div className="header-button d-none d-md-inline-block">
                       <a className="tj-primary-btn" href="contact.html">
-                        Request a Quote{" "}
+                     Login
                         {/* <i className="fa-light fa-arrow-right-from-line"></i> */}
                         <i className="bi bi-arrow-bar-right"></i>
                       </a>
                     </div>
                   </div>
-                  <div className="menu-bar d-lg-none">
+                  {/* <div className="menu-bar d-lg-none">
                     <button>
                       <span></span>
                       <span></span>
                       <span></span>
                       <span></span>
                     </button>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -460,7 +295,7 @@ const Home = () => {
         {/* <!-- start: Hero Section --> */}
         <section
           className="tj-hero-section"
-          // data-bg-image="assets/images/slider/slider-1.jpg"
+          data-bg-image="assets/images/slider/slider-1.jpg"
         >
           <div className="container">
             <div className="row">
