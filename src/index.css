@@ -141,3 +141,45 @@ margin-right: 20px;
 .bottomtotop{
     /* border: 1px solid red; */
 }
+
+.round_ironcutting {
+    background-color: #ffffff;
+    color: black;
+    padding: 20px;
+    /* border-radius: 10px; */
+}
+.steel-text {
+    font-weight: 700;
+    font-style: normal;
+}
+.steel-description {
+    font-size: 20px;
+    font-style: inherit;
+    font-weight: 300;
+    padding: 23px 0px;
+    text-align: justify;
+}
+/* .steel-image {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+} */
+
+svg#arrowbuttomtotop {
+    color: #fc5828;;
+}
+
+.Photo_Roundcutting{
+    padding: 20px 0px;
+    margin: 50px 0px;
+    width: 34%;
+    position: absolute;
+    /* top: -19px; */
+    right: 6em;
+    /* left: 924px; */
+    /* /* display: flex; */
+}
+
+.Photo_flatcutting{
+    
+}
