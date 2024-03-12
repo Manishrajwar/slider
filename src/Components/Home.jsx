@@ -35,7 +35,8 @@ import pic32 from "../Assets/images/logos/secondary-logo.png";
 import pic33 from "../Assets/images/shapes/footer-left-shape.svg";
 import pic34 from "../Assets/images/shapes/footer-right-shape.svg";
 import pic35 from "../Assets/images/steps/steps-3.jpg";
-
+import roundIron from "../Assets/images/round_Iron.jpg";
+import flatIron from "../Assets/images/flate.jpg";
 // import piccarouel1 from "../Assets/images/portfolio/portfolio-1.jpg";
 // import piccarouel2 from "../Assets/images/portfolio/portfolio-2.jpg";
 // import piccarouel3 from "../Assets/images/portfolio/portfolio-3.jpg";
@@ -114,31 +115,29 @@ const Home = () => {
   const sliderRef = useRef(null);
 
   // const handleWheel = (e) => {
-  //   e.preventDefault(); 
+  //   e.preventDefault();
   //   if (sliderRef.current) {
-  //     const delta = e.deltaY || e.detail || e.wheelDelta; 
+  //     const delta = e.deltaY || e.detail || e.wheelDelta;
   //     sliderRef.current.scrollLeft += delta;
   //   }
   // };
 
   const goToPrevSlide = () => {
     if (sliderRef.current) {
-      sliderRef.current.scrollBy({ left: -325, behavior: 'smooth' }); 
+      sliderRef.current.scrollBy({ left: -325, behavior: "smooth" });
     }
   };
 
   const goToNextSlide = () => {
     if (sliderRef.current) {
-      sliderRef.current.scrollBy({ left: 325, behavior: 'smooth' }); 
+      sliderRef.current.scrollBy({ left: 325, behavior: "smooth" });
     }
   };
 
-
-  // for another container slider 
+  // for another container slider
   const [activeContainerIndex, setActiveContainerIndex] = useState(0);
 
   const totalContainers = 4; // Total number of containers
-
 
   return (
     <>
@@ -205,7 +204,6 @@ const Home = () => {
             <div className="row">
               <div className="col-12">
                 <div className="mainmenu-wrapper">
-
                   <div className="anchrollogo">
                     <a className="" href="">
                       <span className="iconcUT">IRON CUT</span>
@@ -214,22 +212,21 @@ const Home = () => {
 
                   <div className="mainmenu main-mobile-menu d-none d-lg-inline-block">
                     {/* navitems */}
-                    <ul>        
-                    </ul>
+                    <ul></ul>
                   </div>
-                  
+
                   <div className="mainmenu-right">
                     {/* <div className="header-search d-none d-xl-inline-block">
                       <button className="search">
                         <i className="bi bi-search"></i>
                       </button>
                     </div> */}
-                    <div className="header-button d-none d-md-inline-block">
+                    {/* <div className="header-button d-none d-md-inline-block">
                       <a className="tj-primary-btn" href="contact.html">
-                      Login
+                        Login
                         <i className="bi bi-arrow-bar-right"></i>
                       </a>
-                    </div>
+                    </div> */}
                   </div>
                   {/* <div className="menu-bar d-lg-none">
                     <button>
@@ -261,7 +258,7 @@ const Home = () => {
                     </a>
                   </div>
                   <div className="mainmenu d-none d-lg-inline-block">
-                  {/* small screen navitems */}
+                    {/* small screen navitems */}
                   </div>
                   <div className="mainmenu-right">
                     {/* <div className="header-search d-none d-xl-inline-block">
@@ -271,7 +268,7 @@ const Home = () => {
                     </div> */}
                     <div className="header-button d-none d-md-inline-block">
                       <a className="tj-primary-btn" href="contact.html">
-                     Login
+                        Login
                         {/* <i className="fa-light fa-arrow-right-from-line"></i> */}
                         <i className="bi bi-arrow-bar-right"></i>
                       </a>
@@ -318,13 +315,13 @@ const Home = () => {
                       even slightly believable.
                     </p>
                   </div>
-                  <div className="hero-button">
+                  {/* <div className="hero-button">
                     <a className="tj-light-button" href="contact.html">
                       Read More{" "}
-                      {/* <i className="fa-light fa-arrow-right-from-line"></i> */}
+                      <i className="fa-light fa-arrow-right-from-line"></i>
                       <i className="bi bi-arrow-bar-right"></i>
                     </a>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -435,8 +432,8 @@ const Home = () => {
                     </div>
                   </div>
                   <div className="left-image">
-    <img src={Pic4} alt="" />
-</div>
+                    <img src={Pic4} alt="" />
+                  </div>
 
                   <div className="right-image">
                     <img src={Pic5} alt="" />
@@ -456,10 +453,57 @@ const Home = () => {
           </div>
         </section>
 
+        {/* <!-----start Round Iron cutting---------!> */}
+        <div class="container round_ironcutting">
+          <div class="row">
+            <div class="col-md-6 pt-5 pb-5">
+              <h2 class="steel-text">Round Iron Cutting </h2>
+              <p class="steel-description">
+                We'll cut your metal – both mechanical and structural tubing in
+                a range of shapes and sizes with no minimum order. It doesn’t
+                matter if you need one small piece or a hundred in various
+                sizes, we’ll cut your metal per your specifications. We have
+                cold saws, band saws, lathe-type cutoff machines, and precision
+                laser cutters, as well as equipment for drilling, milling,
+                chamfering, and blasting.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <div class="Photo_Roundcutting">
+                <img src={roundIron} alt="Steel Cutting" class="steel-image" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container round_ironcutting">
+          <div class="row pt-5">
+            <div class="col-md-6 pt-5 pb-5 ">
+            
+              <img src={flatIron} alt="Steel Cutting" class="steel-image" />
+          
+            </div>
+            <div class="col-md-6 pt-5 pb-5">
+              <h2 class="steel-text">Flat Iron Cutting </h2>
+              <p class="steel-description">
+                We'll cut your metal – both mechanical and structural tubing in
+                a range of shapes and sizes with no minimum order. It doesn’t
+                matter if you need one small piece or a hundred in various
+                sizes, we’ll cut your metal per your specifications. We have
+                cold saws, band saws, lathe-type cutoff machines, and precision
+                laser cutters, as well as equipment for drilling, milling,
+                chamfering, and blasting.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* <!-----end Round Iron cutting---------!> */}
+
         {/* <!-- end: About Section --> */}
 
         {/*  <!-- start: Service Section --> */}
-        <section className="tj-service-section dineshBackImages">
+        {/* <section className="tj-service-section dineshBackImages">
           <div className="container">
             <div className="row">
               <div className="tj-heading-area">
@@ -655,12 +699,12 @@ const Home = () => {
           <div className="service-section-shape">
             <img src={Pic8} alt="Shape" />
           </div>
-        </section>
+        </section> */}
 
         {/* <!-- end: Service Section --> */}
 
         {/* <!-- start: Video Section --> */}
-        <section
+        {/* <section
           className="tj-video-section"
           data-bg-image="assets/images/bg/video-bg.jpg"
         >
@@ -678,7 +722,7 @@ const Home = () => {
                         href="https://www.youtube.com/watch?v=ADmQTw4qqTY"
                       >
                         <i className="bi bi-play-fill"></i>
-                        {/* <i className="fa-solid fa-play"></i> */}
+                         <i className="fa-solid fa-play"></i> 
                       </a>
                     </div>
                   </div>
@@ -732,12 +776,12 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* <!-- end: Video Section --> */}
 
         {/* <!-- start: Steps Section --> */}
-        <section className="tj-steps-section">
+        {/* <section className="tj-steps-section">
           <div className="container">
             <div className="row">
               <div className="col">
@@ -776,7 +820,7 @@ const Home = () => {
                             <div className="steps-button">
                               <a className="tj-primary-btn" href="contact.html">
                                 More Details{" "}
-                                {/* <i className="bi bi-arrow-bar-right"></i> */}
+                                // <i className="bi bi-arrow-bar-right"></i> 
                                 <i className="fa-light fa-arrow-right-from-line"></i>
                               </a>
                             </div>
@@ -825,7 +869,7 @@ const Home = () => {
                             <div className="steps-button">
                               <a className="tj-primary-btn" href="#">
                                 More Details{" "}
-                                {/* <i className="fa-light fa-arrow-right-from-line"></i> */}
+                                // <i className="fa-light fa-arrow-right-from-line"></i> 
                                 <i className="bi bi-arrow-bar-right"></i>
                               </a>
                             </div>
@@ -874,7 +918,7 @@ const Home = () => {
                             <div className="steps-button">
                               <a className="tj-primary-btn" href="#">
                                 More Details{" "}
-                                {/* <i className="fa-light fa-arrow-right-from-line"></i> */}
+                                //  <i className="fa-light fa-arrow-right-from-line"></i> 
                                 <i className="bi bi-arrow-bar-right"></i>
                               </a>
                             </div>
@@ -923,7 +967,7 @@ const Home = () => {
                             <div className="steps-button">
                               <a className="tj-primary-btn" href="#">
                                 More Details{" "}
-                                {/* <i className="fa-light fa-arrow-right-from-line"></i> */}
+                                //  <i className="fa-light fa-arrow-right-from-line"></i> 
                                 <i className="bi bi-arrow-bar-right"></i>
                               </a>
                             </div>
@@ -1004,12 +1048,12 @@ const Home = () => {
           <div className="steps-sec-right-shape">
             <img src={Pic11} alt="Shape" />
           </div>
-        </section>
+        </section> */}
 
         {/* <!-- end: Steps Section --> */}
 
         {/* <!-- start: Analysis Section --> */}
-        <section
+        {/* <section
           className="tj-analysis-section"
           data-bg-image="assets/images/bg/analysis-bg.jpg"
         >
@@ -1043,7 +1087,7 @@ const Home = () => {
                     <div className="analysis-button">
                       <a className="tj-primary-btn" href="contact.html">
                         More Details{" "}
-                        {/* <i className="fa-light fa-arrow-right-from-line"></i> */}
+                        // <i className="fa-light fa-arrow-right-from-line"></i> 
                         <i className="bi bi-arrow-bar-right"></i>
                       </a>
                     </div>
@@ -1065,7 +1109,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* <!-- end: Analysis Section --> */}
         {/* 
@@ -1244,7 +1288,7 @@ const Home = () => {
         {/* <!-- end: Price Section --> */}
 
         {/* <!-- start: Portfolio Section --> */}
-        <section className="tj-portfolio-section">
+        {/* <section className="tj-portfolio-section">
           <div className="container">
             <div className="row">
               <div className="tj-heading-area">
@@ -1395,545 +1439,521 @@ const Home = () => {
           <div className="portfolio-sec-bottom-shape">
             <img src={pic15} alt="Shape" />
           </div>
-        </section>
+        </section> */}
         {/* <!-- end: Portfolio Section --> */}
 
         {/* <!-- start: Testimonial Section --> */}
-        <section className="tj-testimonial-section ">
+        {/* <section className="tj-testimonial-section ">
+          <div className="testLeftIcon">
+            <i
+              onClick={() => {
+                if (activeContainerIndex > 0) {
+                  setActiveContainerIndex((prev) => prev - 1);
+                }
+              }}
+              class="bi bi-arrow-left-circle-fill"
+            ></i>
+          </div>
+
+          <div className="allSwContainer">
+            // container 
+            <div
+              className={`containerswap ${
+                activeContainerIndex === 0 ? "active" : ""
+              }`}
+            >
+              <div className="row">
+                <div className="col-lg-5"></div>
+                <div className="col-lg-7">
+                  <div className="tj-heading-area">
+                    <h4 className="sub-title">
+                      Reviews
+                      <span className="section-sub-title-shape"></span>
+                    </h4>
+                    <h2 className="sec-title">
+                      Happy Clients <span>Thoughts</span>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+
+              <div className="row">
+                <div className="col">
+                  <div className="testimonial-wrapper">
+                    <div className="row align-items-end">
+                      <div className="col-lg-4 offset-lg-1">
+                        <div className="swiper testimonial-auother-slider">
+                          <div className="swiper-wrapper">
+                            <div className="swiper-slide testimonial-auother">
+                              <div className="thumb-image">
+                                <img src={Pic16} alt="" />
+                                <div className="quote-icon">
+                                  <img src={pic17} alt="Icon" />
+                                </div>
+                              </div>
+                              <div className="testimonial-name">
+                                <h3 className="title">David,</h3>
+                                <span className="sub-title">Desinger</span>
+                              </div>
+                              <div className="testimonial-info">
+                                <div className="testimonial-rating">
+                                  <div className="star-ratings">
+                                    <div className="fill-ratings">
+                                      <span>★★★★★</span>
+                                    </div>
+                                    <div className="empty-ratings">
+                                      <span>★★★★★</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="testimonial-socials">
+                                  <ul className="dot-style">
+                                    <li>
+                                      <a href="#">
+                                        <i className="bi bi-twitter-x"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <i className="bi bi-whatsapp"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <i className="bi bi-instagram"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <i className="bi bi-facebook"></i>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-7">
+                        <div className="swiper thumb-content-slider">
+                          <div className="swiper-wrapper">
+                            <div className="swiper-slide">
+                              <div className="testimonial-content-slider">
+                                <p>
+                                  ‘’There are many variations of passages of
+                                  Lorem Ipsum available, but the majority have
+                                  suffered alteration in some form, by injected
+                                  humour, or randomised words which don't look
+                                  even slightly believable. If you are going to
+                                  use a passage of Lorem Ipsum, you need to be
+                                  sure there isn't anything embarrassing hidden
+                                  in the middle of text.’’
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="testimonial-navigation">
+                            <div className="testimonial-prev">
+                              <i className="flaticon-right-arrow"></i>
+                            </div>
+                            <div className="testimonial-next">
+                              <i className="flaticon-right-arrow"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            //  ciontainer 
+            <div
+              className={`containerswap ${
+                activeContainerIndex === 1 ? "active" : ""
+              }`}
+            >
+              <div className="row">
+                <div className="col-lg-5"></div>
+                <div className="col-lg-7">
+                  <div className="tj-heading-area">
+                    <h4 className="sub-title">
+                      Reviews
+                      <span className="section-sub-title-shape"></span>
+                    </h4>
+                    <h2 className="sec-title">
+                      Happy Clients <span>Thoughts</span>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+
+              <div className="row">
+                <div className="col">
+                  <div className="testimonial-wrapper">
+                    <div className="row align-items-end">
+                      <div className="col-lg-4 offset-lg-1">
+                        <div className="swiper testimonial-auother-slider">
+                          <div className="swiper-wrapper">
+                            <div className="swiper-slide testimonial-auother">
+                              <div className="thumb-image">
+                                <img src={Pic16} alt="" />
+                                <div className="quote-icon">
+                                  <img src={pic17} alt="Icon" />
+                                </div>
+                              </div>
+                              <div className="testimonial-name">
+                                <h3 className="title">Manish,</h3>
+                                <span className="sub-title">Web develper</span>
+                              </div>
+                              <div className="testimonial-info">
+                                <div className="testimonial-rating">
+                                  <div className="star-ratings">
+                                    <div className="fill-ratings">
+                                      <span>★★★</span>
+                                    </div>
+                                    <div className="empty-ratings">
+                                      <span>★★★</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="testimonial-socials">
+                                  <ul className="dot-style">
+                                    <li>
+                                      <a href="#">
+                                        <i className="bi bi-twitter-x"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <i className="bi bi-whatsapp"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <i className="bi bi-instagram"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <i className="bi bi-facebook"></i>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-7">
+                        <div className="swiper thumb-content-slider">
+                          <div className="swiper-wrapper">
+                            <div className="swiper-slide">
+                              <div className="testimonial-content-slider">
+                                <p>
+                                  ‘this is another slider of prgaram
+                                  fdjflksjfkldsj fdlkfdj fld Ipsum available,
+                                  but the majority have suffered alteration in
+                                  some form, by injected humour, or randomised
+                                  words which don't look even slightly
+                                  believable. If you are going to use a passage
+                                  of Lorem Ipsum, you need to be sure there
+                                  isn't anything embarrassing hidden in the
+                                  middle of text.’’
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="testimonial-navigation">
+                            <div className="testimonial-prev">
+                              <i className="flaticon-right-arrow"></i>
+                            </div>
+                            <div className="testimonial-next">
+                              <i className="flaticon-right-arrow"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            container
+            <div
+              className={`containerswap ${
+                activeContainerIndex === 2 ? "active" : ""
+              }`}
+            >
+              <div className="row">
+                <div className="col-lg-5"></div>
+                <div className="col-lg-7">
+                  <div className="tj-heading-area">
+                    <h4 className="sub-title">
+                      Reviews
+                      <span className="section-sub-title-shape"></span>
+                    </h4>
+                    <h2 className="sec-title">
+                      Happy Clients <span>Thoughts</span>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+
+              <div className="row">
+                <div className="col">
+                  <div className="testimonial-wrapper">
+                    <div className="row align-items-end">
+                      <div className="col-lg-4 offset-lg-1">
+                        <div className="swiper testimonial-auother-slider">
+                          <div className="swiper-wrapper">
+                            <div className="swiper-slide testimonial-auother">
+                              <div className="thumb-image">
+                                <img src={Pic16} alt="" />
+                                <div className="quote-icon">
+                                  <img src={pic17} alt="Icon" />
+                                </div>
+                              </div>
+                              <div className="testimonial-name">
+                                <h3 className="title">David,</h3>
+                                <span className="sub-title">Desinger</span>
+                              </div>
+                              <div className="testimonial-info">
+                                <div className="testimonial-rating">
+                                  <div className="star-ratings">
+                                    <div className="fill-ratings">
+                                      <span>★★★★★</span>
+                                    </div>
+                                    <div className="empty-ratings">
+                                      <span>★★★★★</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="testimonial-socials">
+                                  <ul className="dot-style">
+                                    <li>
+                                      <a href="#">
+                                        <i className="bi bi-twitter-x"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <i className="bi bi-whatsapp"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <i className="bi bi-instagram"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <i className="bi bi-facebook"></i>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-7">
+                        <div className="swiper thumb-content-slider">
+                          <div className="swiper-wrapper">
+                            <div className="swiper-slide">
+                              <div className="testimonial-content-slider">
+                                <p>
+                                  ‘’There are many variations of passages of
+                                  Lorem Ipsum available, but the majority have
+                                  suffered alteration in some form, by injected
+                                  humour, or randomised words which don't look
+                                  even slightly believable. If you are going to
+                                  use a passage of Lorem Ipsum, you need to be
+                                  sure there isn't anything embarrassing hidden
+                                  in the middle of text.’’
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="testimonial-navigation">
+                            <div className="testimonial-prev">
+                              <i className="flaticon-right-arrow"></i>
+                            </div>
+                            <div className="testimonial-next">
+                              <i className="flaticon-right-arrow"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            // ciontainer 
+            <div
+              className={`containerswap ${
+                activeContainerIndex === 3 ? "active" : ""
+              }`}
+            >
+              <div className="row">
+                <div className="col-lg-5"></div>
+                <div className="col-lg-7">
+                  <div className="tj-heading-area">
+                    <h4 className="sub-title">
+                      Reviews
+                      <span className="section-sub-title-shape"></span>
+                    </h4>
+                    <h2 className="sec-title">
+                      Happy Clients <span>Thoughts</span>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+
+              <div className="row">
+                <div className="col">
+                  <div className="testimonial-wrapper">
+                    <div className="row align-items-end">
+                      <div className="col-lg-4 offset-lg-1">
+                        <div className="swiper testimonial-auother-slider">
+                          <div className="swiper-wrapper">
+                            <div className="swiper-slide testimonial-auother">
+                              <div className="thumb-image">
+                                <img src={Pic16} alt="" />
+                                <div className="quote-icon">
+                                  <img src={pic17} alt="Icon" />
+                                </div>
+                              </div>
+                              <div className="testimonial-name">
+                                <h3 className="title">Manish,</h3>
+                                <span className="sub-title">Web develper</span>
+                              </div>
+                              <div className="testimonial-info">
+                                <div className="testimonial-rating">
+                                  <div className="star-ratings">
+                                    <div className="fill-ratings">
+                                      <span>★★★</span>
+                                    </div>
+                                    <div className="empty-ratings">
+                                      <span>★★★</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="testimonial-socials">
+                                  <ul className="dot-style">
+                                    <li>
+                                      <a href="#">
+                                        <i className="bi bi-twitter-x"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <i className="bi bi-whatsapp"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <i className="bi bi-instagram"></i>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                        <i className="bi bi-facebook"></i>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-7">
+                        <div className="swiper thumb-content-slider">
+                          <div className="swiper-wrapper">
+                            <div className="swiper-slide">
+                              <div className="testimonial-content-slider">
+                                <p>
+                                  ‘this is another slider of prgaram
+                                  fdjflksjfkldsj fdlkfdj fld Ipsum available,
+                                  but the majority have suffered alteration in
+                                  some form, by injected humour, or randomised
+                                  words which don't look even slightly
+                                  believable. If you are going to use a passage
+                                  of Lorem Ipsum, you need to be sure there
+                                  isn't anything embarrassing hidden in the
+                                  middle of text.’’
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="testimonial-navigation">
+                            <div className="testimonial-prev">
+                              <i className="flaticon-right-arrow"></i>
+                            </div>
+                            <div className="testimonial-next">
+                              <i className="flaticon-right-arrow"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div className="testLeftIcon">
-         
-          <i onClick={()=>{
-            if(activeContainerIndex > 0){
-                            setActiveContainerIndex((prev)=>prev-1);
-            }
-          }} class="bi bi-arrow-left-circle-fill"></i>
+            <i
+              onClick={() => {
+                if (activeContainerIndex < totalContainers - 1) {
+                  setActiveContainerIndex((prev) => prev + 1);
+                }
+              }}
+              class="bi bi-arrow-right-circle-fill"
+            ></i>
           </div>
-
- <div className="allSwContainer">
-
-
-{/* container */}
-          <div className={`containerswap ${activeContainerIndex === 0 ? 'active' : ''}`}>
-            
-            <div className="row">
-              <div className="col-lg-5"></div>
-              <div className="col-lg-7">
-                <div className="tj-heading-area">
-                  <h4 className="sub-title">
-                    Reviews
-                    <span className="section-sub-title-shape"></span>
-                  </h4>
-                  <h2 className="sec-title">
-                    Happy Clients <span>Thoughts</span>
-                  </h2>
-                </div>
-              </div>
-            </div>
-
-            <div className="row">
-              <div className="col">
-
-                <div className="testimonial-wrapper">
-                  <div className="row align-items-end">
-                    <div className="col-lg-4 offset-lg-1">
-                      <div className="swiper testimonial-auother-slider">
-                        <div className="swiper-wrapper">
-
-                          <div className="swiper-slide testimonial-auother">
-
-                            <div className="thumb-image">
-                              <img src={Pic16} alt="" />
-                              <div className="quote-icon">
-                                <img src={pic17} alt="Icon" />
-                              </div>
-                            </div>
-                            <div className="testimonial-name">
-                              <h3 className="title">David,</h3>
-                              <span className="sub-title">Desinger</span>
-                            </div>
-                            <div className="testimonial-info">
-                              <div className="testimonial-rating">
-                                <div className="star-ratings">
-                                  <div className="fill-ratings">
-                                    <span>★★★★★</span>
-                                  </div>
-                                  <div className="empty-ratings">
-                                    <span>★★★★★</span>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="testimonial-socials">
-                                <ul className="dot-style">
-                                  <li>
-                                    <a href="#">
-                                      <i className="bi bi-twitter-x"></i>
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="#">
-                                      <i className="bi bi-whatsapp"></i>
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="#">
-                                      <i className="bi bi-instagram"></i>
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="#">
-                                      <i className="bi bi-facebook"></i>
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-
-                          </div>
-                          
-              
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="col-lg-7">
-                      <div className="swiper thumb-content-slider">
-                        <div className="swiper-wrapper">
-                          <div className="swiper-slide">
-                            <div className="testimonial-content-slider">
-                              <p>
-                                ‘’There are many variations of passages of Lorem
-                                Ipsum available, but the majority have suffered
-                                alteration in some form, by injected humour, or
-                                randomised words which don't look even slightly
-                                believable. If you are going to use a passage of
-                                Lorem Ipsum, you need to be sure there isn't
-                                anything embarrassing hidden in the middle of
-                                text.’’
-                              </p>
-                            </div>
-                          </div>
-                         
-                        </div>
-                        <div className="testimonial-navigation">
-                          <div className="testimonial-prev">
-                            <i className="flaticon-right-arrow"></i>
-                          </div>
-                          <div className="testimonial-next">
-                            <i className="flaticon-right-arrow"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-
-          {/* ciontainer */}
-          <div className={`containerswap ${activeContainerIndex === 1 ? 'active' : ''}`}>
-            
-            <div className="row">
-              <div className="col-lg-5"></div>
-              <div className="col-lg-7">
-                <div className="tj-heading-area">
-                  <h4 className="sub-title">
-                    Reviews
-                    <span className="section-sub-title-shape"></span>
-                  </h4>
-                  <h2 className="sec-title">
-                    Happy Clients <span>Thoughts</span>
-                  </h2>
-                </div>
-              </div>
-            </div>
-
-            <div className="row">
-              <div className="col">
-
-                <div className="testimonial-wrapper">
-                  <div className="row align-items-end">
-                    <div className="col-lg-4 offset-lg-1">
-                      <div className="swiper testimonial-auother-slider">
-                        <div className="swiper-wrapper">
-
-                          <div className="swiper-slide testimonial-auother">
-
-                            <div className="thumb-image">
-                              <img src={Pic16} alt="" />
-                              <div className="quote-icon">
-                                <img src={pic17} alt="Icon" />
-                              </div>
-                            </div>
-                            <div className="testimonial-name">
-                              <h3 className="title">Manish,</h3>
-                              <span className="sub-title">Web develper</span>
-                            </div>
-                            <div className="testimonial-info">
-                              <div className="testimonial-rating">
-                                <div className="star-ratings">
-                                  <div className="fill-ratings">
-                                    <span>★★★</span>
-                                  </div>
-                                  <div className="empty-ratings">
-                                    <span>★★★</span>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="testimonial-socials">
-                                <ul className="dot-style">
-                                  <li>
-                                    <a href="#">
-                                      <i className="bi bi-twitter-x"></i>
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="#">
-                                      <i className="bi bi-whatsapp"></i>
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="#">
-                                      <i className="bi bi-instagram"></i>
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="#">
-                                      <i className="bi bi-facebook"></i>
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-
-                          </div>
-                          
-         
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="col-lg-7">
-                      <div className="swiper thumb-content-slider">
-                        <div className="swiper-wrapper">
-                          <div className="swiper-slide">
-                            <div className="testimonial-content-slider">
-                              <p>
-                                ‘this is another slider of prgaram  fdjflksjfkldsj fdlkfdj fld
-                                Ipsum available, but the majority have suffered
-                                alteration in some form, by injected humour, or
-                                randomised words which don't look even slightly
-                                believable. If you are going to use a passage of
-                                Lorem Ipsum, you need to be sure there isn't
-                                anything embarrassing hidden in the middle of
-                                text.’’
-                              </p>
-                            </div>
-                          </div>
-                         
-                        </div>
-                        <div className="testimonial-navigation">
-                          <div className="testimonial-prev">
-                            <i className="flaticon-right-arrow"></i>
-                          </div>
-                          <div className="testimonial-next">
-                            <i className="flaticon-right-arrow"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-
-{/* container */}
-          <div className={`containerswap ${activeContainerIndex === 2 ? 'active' : ''}`}>
-            
-            <div className="row">
-              <div className="col-lg-5"></div>
-              <div className="col-lg-7">
-                <div className="tj-heading-area">
-                  <h4 className="sub-title">
-                    Reviews
-                    <span className="section-sub-title-shape"></span>
-                  </h4>
-                  <h2 className="sec-title">
-                    Happy Clients <span>Thoughts</span>
-                  </h2>
-                </div>
-              </div>
-            </div>
-
-            <div className="row">
-              <div className="col">
-
-                <div className="testimonial-wrapper">
-                  <div className="row align-items-end">
-                    <div className="col-lg-4 offset-lg-1">
-                      <div className="swiper testimonial-auother-slider">
-                        <div className="swiper-wrapper">
-
-                          <div className="swiper-slide testimonial-auother">
-
-                            <div className="thumb-image">
-                              <img src={Pic16} alt="" />
-                              <div className="quote-icon">
-                                <img src={pic17} alt="Icon" />
-                              </div>
-                            </div>
-                            <div className="testimonial-name">
-                              <h3 className="title">David,</h3>
-                              <span className="sub-title">Desinger</span>
-                            </div>
-                            <div className="testimonial-info">
-                              <div className="testimonial-rating">
-                                <div className="star-ratings">
-                                  <div className="fill-ratings">
-                                    <span>★★★★★</span>
-                                  </div>
-                                  <div className="empty-ratings">
-                                    <span>★★★★★</span>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="testimonial-socials">
-                                <ul className="dot-style">
-                                  <li>
-                                    <a href="#">
-                                      <i className="bi bi-twitter-x"></i>
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="#">
-                                      <i className="bi bi-whatsapp"></i>
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="#">
-                                      <i className="bi bi-instagram"></i>
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="#">
-                                      <i className="bi bi-facebook"></i>
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-
-                          </div>
-                          
-              
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="col-lg-7">
-                      <div className="swiper thumb-content-slider">
-                        <div className="swiper-wrapper">
-                          <div className="swiper-slide">
-                            <div className="testimonial-content-slider">
-                              <p>
-                                ‘’There are many variations of passages of Lorem
-                                Ipsum available, but the majority have suffered
-                                alteration in some form, by injected humour, or
-                                randomised words which don't look even slightly
-                                believable. If you are going to use a passage of
-                                Lorem Ipsum, you need to be sure there isn't
-                                anything embarrassing hidden in the middle of
-                                text.’’
-                              </p>
-                            </div>
-                          </div>
-                         
-                        </div>
-                        <div className="testimonial-navigation">
-                          <div className="testimonial-prev">
-                            <i className="flaticon-right-arrow"></i>
-                          </div>
-                          <div className="testimonial-next">
-                            <i className="flaticon-right-arrow"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-
-          {/* ciontainer */}
-          <div className={`containerswap ${activeContainerIndex === 3 ? 'active' : ''}`}>
-            
-            <div className="row">
-              <div className="col-lg-5"></div>
-              <div className="col-lg-7">
-                <div className="tj-heading-area">
-                  <h4 className="sub-title">
-                    Reviews
-                    <span className="section-sub-title-shape"></span>
-                  </h4>
-                  <h2 className="sec-title">
-                    Happy Clients <span>Thoughts</span>
-                  </h2>
-                </div>
-              </div>
-            </div>
-
-            <div className="row">
-              <div className="col">
-
-                <div className="testimonial-wrapper">
-                  <div className="row align-items-end">
-                    <div className="col-lg-4 offset-lg-1">
-                      <div className="swiper testimonial-auother-slider">
-                        <div className="swiper-wrapper">
-
-                          <div className="swiper-slide testimonial-auother">
-
-                            <div className="thumb-image">
-                              <img src={Pic16} alt="" />
-                              <div className="quote-icon">
-                                <img src={pic17} alt="Icon" />
-                              </div>
-                            </div>
-                            <div className="testimonial-name">
-                              <h3 className="title">Manish,</h3>
-                              <span className="sub-title">Web develper</span>
-                            </div>
-                            <div className="testimonial-info">
-                              <div className="testimonial-rating">
-                                <div className="star-ratings">
-                                  <div className="fill-ratings">
-                                    <span>★★★</span>
-                                  </div>
-                                  <div className="empty-ratings">
-                                    <span>★★★</span>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="testimonial-socials">
-                                <ul className="dot-style">
-                                  <li>
-                                    <a href="#">
-                                      <i className="bi bi-twitter-x"></i>
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="#">
-                                      <i className="bi bi-whatsapp"></i>
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="#">
-                                      <i className="bi bi-instagram"></i>
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="#">
-                                      <i className="bi bi-facebook"></i>
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-
-                          </div>
-                          
-         
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="col-lg-7">
-                      <div className="swiper thumb-content-slider">
-                        <div className="swiper-wrapper">
-                          <div className="swiper-slide">
-                            <div className="testimonial-content-slider">
-                              <p>
-                                ‘this is another slider of prgaram  fdjflksjfkldsj fdlkfdj fld
-                                Ipsum available, but the majority have suffered
-                                alteration in some form, by injected humour, or
-                                randomised words which don't look even slightly
-                                believable. If you are going to use a passage of
-                                Lorem Ipsum, you need to be sure there isn't
-                                anything embarrassing hidden in the middle of
-                                text.’’
-                              </p>
-                            </div>
-                          </div>
-                         
-                        </div>
-                        <div className="testimonial-navigation">
-                          <div className="testimonial-prev">
-                            <i className="flaticon-right-arrow"></i>
-                          </div>
-                          <div className="testimonial-next">
-                            <i className="flaticon-right-arrow"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-
-          
-          </div>        
-        
-
-          <div className="testLeftIcon">
-          <i onClick={()=>{
-            if(activeContainerIndex < totalContainers-1){
-              setActiveContainerIndex((prev)=>prev+1);
-            }
-          }} class="bi bi-arrow-right-circle-fill"></i>
-          </div>
-
 
           <div className="twoTestBtns">
+            <i
+              onClick={() => {
+                if (activeContainerIndex > 0) {
+                  setActiveContainerIndex((prev) => prev - 1);
+                }
+              }}
+              class="bi bi-arrow-left-circle-fill"
+            ></i>
 
-          <i onClick={()=>{
-            if(activeContainerIndex > 0){
-                            setActiveContainerIndex((prev)=>prev-1);
-            }
-          }} class="bi bi-arrow-left-circle-fill"></i>
-
-<i onClick={()=>{
-            if(activeContainerIndex < totalContainers-1){
-              setActiveContainerIndex((prev)=>prev+1);
-            }
-          }} class="bi bi-arrow-right-circle-fill"></i>
+            <i
+              onClick={() => {
+                if (activeContainerIndex < totalContainers - 1) {
+                  setActiveContainerIndex((prev) => prev + 1);
+                }
+              }}
+              class="bi bi-arrow-right-circle-fill"
+            ></i>
           </div>
-          
+
           <div className="testimonial-sec-top-shape">
-                            <img src={pic18} alt="Images" />
-                          </div>
+            <img src={pic18} alt="Images" />
+          </div>
 
-                          <div className="testimonial-sec-bottom-shape">
-                            <img src={pic19} alt="Images" />
-                          </div>
-
-        </section>
+          <div className="testimonial-sec-bottom-shape">
+            <img src={pic19} alt="Images" />
+          </div>
+        </section> */}
         {/* <!-- end: Testimonial Section --> */}
 
         {/* <!-- start: Faq Section --> */}
@@ -1952,10 +1972,11 @@ const Home = () => {
                 </div>
               </div>
             </div>
+
             <div className="row">
               <div className="col-lg-7">
-                <div className="accordion tj-faq" id="faqOne">
-                  {/* <div className="accordion-item">
+                <div class="accordion m-5" id="accordionPanelsStayOpenExample">
+                  <div className="faq-item">
                     <h2 className="accordion-header" id="headingOne">
                       <button
                         className="accordion-button"
@@ -1965,7 +1986,7 @@ const Home = () => {
                         aria-expanded="true"
                         aria-controls="collapseOne"
                       >
-                        Accordion Item #1
+                        1. What is the proce of industrial automation
                       </button>
                     </h2>
                     <div
@@ -1975,21 +1996,181 @@ const Home = () => {
                       data-bs-parent="#accordionExample"
                     >
                       <div className="accordion-body">
-                        <strong>
-                          This is the first item's accordion body.
-                        </strong>{" "}
-                        It is shown by default, until the collapse plugin adds
-                        the appropriate classNamees that we use to style each
-                        element. These classNamees control the overall appearance,
-                        as well as the showing and hiding via CSS transitions.
-                        You can modify any of this with custom CSS or overriding
-                        our default variables. It's also worth noting that just
-                        about any HTML can go within the{" "}
-                        <code>.accordion-body</code>, though the transition does
-                        limit overflow.
+                        Various versions have evolved over the years, sometimes
+                        by accident, sometimes on purpose established fact that
+                        a layout.
                       </div>
                     </div>
-                  </div> */}
+                  </div>
+
+                  <div class="faq-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo"
+                      >
+                        2. How does production planning work?
+                      </button>
+                    </h2>
+                    <div
+                      id="panelsStayOpen-collapseTwo"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="panelsStayOpen-headingTwo"
+                    >
+                      <div class="accordion-body">
+                        Various versions have evolved over the years, sometimes
+                        by accident, sometimes on purpose established fact that
+                        a layout.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="faq-item">
+                    <h2
+                      class="accordion-header"
+                      id="panelsStayOpen-headingthree"
+                    >
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapsethree"
+                        aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapsethree"
+                      >
+                        4. What is the benefit of implementation industry ?
+                      </button>
+                    </h2>
+                    <div
+                      id="panelsStayOpen-collapsethree"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="panelsStayOpen-headingfour"
+                    >
+                      <div class="accordion-body">
+                        Various versions have evolved over the years, sometimes
+                        by accident, sometimes on purpose established fact that
+                        a layout.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="faq-item">
+                    <h2
+                      class="accordion-header"
+                      id="panelsStayOpen-headingfour"
+                    >
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapsefour"
+                        aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapsefour"
+                      >
+                        4. What is the benefit of implementation industry ?
+                      </button>
+                    </h2>
+                    <div
+                      id="panelsStayOpen-collapsefour"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="panelsStayOpen-headingfour"
+                    >
+                      <div class="accordion-body">
+                        Various versions have evolved over the years, sometimes
+                        by accident, sometimes on purpose established fact that
+                        a layout.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="faq-item">
+                    <h2
+                      class="accordion-header"
+                      id="panelsStayOpen-headingfive"
+                    >
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapsefive"
+                        aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapsefive"
+                      >
+                        5. Where can i find information a robot in the industry
+                        ?
+                      </button>
+                    </h2>
+                    <div
+                      id="panelsStayOpen-collapsefive"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="panelsStayOpen-headingfive"
+                    >
+                      <div class="accordion-body">
+                        Various versions have evolved over the years, sometimes
+                        by accident, sometimes on purpose established fact that
+                        a layout.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* <div className="accordion tj-faq" id="faqOne">
+                  <div className="faq-item">
+                    <h2 className="accordion-header" id="headingOne">
+                      <button
+                        className="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        1. What is the proce of industrial automation
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      className="accordion-collapse collapse show"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div className="accordion-body">
+                          Various versions have evolved over the years,
+                          sometimes by accident, sometimes on purpose
+                          established fact that a layout.
+                      </div>
+                    </div>
+                  </div>
+                  <div className="faq-item">
+                    <h2 className="accordion-header" id="headingOne">
+                      <button
+                        className="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        2. How does production planning work?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      className="accordion-collapse collapse show"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div className="accordion-body">
+                         Various versions have evolved over the years,
+                          sometimes by accident, sometimes on purpose
+                          established fact that a layout.
+                      </div>
+                    </div>
+                  </div>
                   <div className="faq-item">
                     <button
                       className="faq-title"
@@ -2024,7 +2205,11 @@ const Home = () => {
                     >
                       2. How does production planning work?
                     </button>
-                    <div id="faq-2" className="collapse" data-bs-parent="#faqOne">
+                    <div
+                      id="faq-2"
+                      className="collapse"
+                      data-bs-parent="#faqOne"
+                    >
                       <div className="accordion-body faq-text">
                         <p>
                           Various versions have evolved over the years,
@@ -2044,7 +2229,11 @@ const Home = () => {
                     >
                       3. What is the manufacturing sector’s function ?
                     </button>
-                    <div id="faq-3" className="collapse" data-bs-parent="#faqOne">
+                    <div
+                      id="faq-3"
+                      className="collapse"
+                      data-bs-parent="#faqOne"
+                    >
                       <div className="accordion-body faq-text">
                         <p>
                           Various versions have evolved over the years,
@@ -2064,7 +2253,11 @@ const Home = () => {
                     >
                       4. What is the benefit of implementation industry ?
                     </button>
-                    <div id="faq-4" className="collapse" data-bs-parent="#faqOne">
+                    <div
+                      id="faq-4"
+                      className="collapse"
+                      data-bs-parent="#faqOne"
+                    >
                       <div className="accordion-body faq-text">
                         <p>
                           Various versions have evolved over the years,
@@ -2084,7 +2277,11 @@ const Home = () => {
                     >
                       5. Where can i find information a robot in the industry ?
                     </button>
-                    <div id="faq-5" className="collapse" data-bs-parent="#faqOne">
+                    <div
+                      id="faq-5"
+                      className="collapse"
+                      data-bs-parent="#faqOne"
+                    >
                       <div className="accordion-body faq-text">
                         <p>
                           Various versions have evolved over the years,
@@ -2094,7 +2291,7 @@ const Home = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
               <div className="col-lg-5">
                 <form>
@@ -2158,7 +2355,7 @@ const Home = () => {
         {/* <!-- end: Faq Section --> */}
 
         {/* <!-- start: Blog Section --> */}
-        <section className="tj-blog-section">
+        {/* <section className="tj-blog-section">
           <div className="container">
             <div className="blog-top-content">
               <div className="tj-heading-area">
@@ -2190,14 +2387,14 @@ const Home = () => {
                       <ul>
                         <li>
                           <span>
-                            {/* <i className="flaticon-user"></i> */}
+                            //  <i className="flaticon-user"></i> 
                             <i className="bi bi-person-fill"></i>
                           </span>{" "}
                           <a href="blog-details.html">Admin</a>
                         </li>
                         <li>
                           <span>
-                            {/* <i className="fa-solid fa-comments"></i> */}
+                           <i className="fa-solid fa-comments"></i>
                             <i className="bi bi-chat"></i>
                           </span>{" "}
                           Comments (1)
@@ -2212,7 +2409,7 @@ const Home = () => {
                     <div className="blog-button">
                       <a className="tj-secondary-btn" href="blog-details.html">
                         Read More{" "}
-                        {/* <i className="fa-light fa-arrow-right-from-line"></i> */}
+                         ///<i className="fa-light fa-arrow-right-from-line"></i> 
                         <i className="bi bi-arrow-bar-right"></i>
                       </a>
                     </div>
@@ -2235,14 +2432,14 @@ const Home = () => {
                       <ul>
                         <li>
                           <span>
-                            {/* <i className="flaticon-user"></i> */}
+                            // <i className="flaticon-user"></i> 
                             <i className="bi bi-person-fill"></i>
                           </span>{" "}
                           <a href="#"> Admin</a>
                         </li>
                         <li>
                           <span>
-                            {/* <i className="fa-solid fa-comments"></i> */}
+                            // <i className="fa-solid fa-comments"></i> 
                             <i className="bi bi-chat"></i>
                           </span>{" "}
                           Comments (1)
@@ -2257,7 +2454,7 @@ const Home = () => {
                     <div className="blog-button">
                       <a className="tj-secondary-btn" href="blog-details.html">
                         Read More{" "}
-                        {/* <i className="fa-light fa-arrow-right-from-line"></i> */}
+                         <i className="fa-light fa-arrow-right-from-line"></i> 
                         <i className="bi bi-arrow-bar-right"></i>
                       </a>
                     </div>
@@ -2280,14 +2477,14 @@ const Home = () => {
                       <ul>
                         <li>
                           <span>
-                            {/* <i className="flaticon-user"></i> */}
+                            // <i className="flaticon-user"></i> 
                             <i className="bi bi-person-fill"></i>
                           </span>{" "}
                           <a href="#"> Admin</a>
                         </li>
                         <li>
                           <span>
-                            {/* <i className="fa-solid fa-comments"></i> */}
+                             <i className="fa-solid fa-comments"></i> 
                             <i className="bi bi-chat"></i>
                           </span>{" "}
                           Comments (1)
@@ -2302,7 +2499,7 @@ const Home = () => {
                     <div className="blog-button">
                       <a className="tj-secondary-btn" href="blog-details.html">
                         Read More{" "}
-                        {/* <i className="fa-light fa-arrow-right-from-line"></i> */}
+                       // <i className="fa-light fa-arrow-right-from-line"></i> 
                         <i className="bi bi-arrow-bar-right"></i>
                       </a>
                     </div>
@@ -2318,11 +2515,11 @@ const Home = () => {
           <div className="blog-sec-shape">
             <img src={pic23} alt="Shape" />
           </div>
-        </section>
+        </section> */}
         {/* <!-- end: Blog Section --> */}
 
         {/* <!-- start: Brand Section --> */}
-        <section className="tj-brand-section">
+        {/* <section className="tj-brand-section">
           <div className="container">
             <div className="tj-heading-area">
               <h4 className="sub-title">
@@ -2377,11 +2574,11 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         {/* <!-- end: Brand Section --> */}
 
         {/* <!-- start: Newsletter Section --> */}
-        <section className="tj-newsletter-section">
+        {/* <section className="tj-newsletter-section">
           <div className="container">
             <div className="row">
               <div className="col-12">
@@ -2436,13 +2633,13 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         {/* <!-- end: Newsletter Section --> */}
       </main>
 
       {/* <!-- start: Footer Area --> */}
       <footer className="tj-footer-area footer-1">
-        <div className="footer-top-area">
+        {/* <div className="footer-top-area">
           <div className="container">
             <div className="row">
               <div className="col-lg-4 col-md-6">
@@ -2464,25 +2661,25 @@ const Home = () => {
                       <ul>
                         <li>
                           <a href="#">
-                            {/* <i className="fa-brands fa-x-twitter"></i> */}
+                             //<i className="fa-brands fa-x-twitter"></i> 
                             <i className="bi bi-twitter-x"></i>
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            {/* <i className="fa-brands fa-whatsapp"></i> */}
+                            // <i className="fa-brands fa-whatsapp"></i> 
                             <i className="bi bi-whatsapp"></i>
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            {/* <i className="fa-brands fa-instagram"></i> */}
+                            // <i className="fa-brands fa-instagram"></i> 
                             <i className="bi bi-instagram"></i>
                           </a>
                         </li>
                         <li>
                           <a href="#">
-                            {/* <i className="fa-brands fa-facebook-f"></i> */}
+                            // <i className="fa-brands fa-facebook-f"></i> *
                             <i className="bi bi-facebook"></i>
                           </a>
                         </li>
@@ -2552,28 +2749,28 @@ const Home = () => {
                     <ul>
                       <li>
                         <div className="contact-icon">
-                          {/* <i className="fa-solid fa-envelope"></i> */}
+                          // <i className="fa-solid fa-envelope"></i> 
                           <i className="bi bi-envelope"></i>
                         </div>
                         <a href="mailto:Info@gmail.com">Info@gmail.com</a>
                       </li>
                       <li>
                         <div className="contact-icon">
-                          {/* <i className="fa-sharp fa-solid fa-globe"></i> */}
+                          // <i className="fa-sharp fa-solid fa-globe"></i> 
                           <i className="bi bi-globe"></i>
                         </div>
                         <a href="#">www.yourwebsite.com</a>
                       </li>
                       <li>
                         <div className="contact-icon">
-                          {/* <i className="fa-regular fa-location-dot"></i> */}
+                          // <i className="fa-regular fa-location-dot"></i> 
                           <i className="bi bi-geo-alt"></i>
                         </div>
                         <span>225 Marion Street, Columbia</span>
                       </li>
                       <li>
                         <div className="contact-icon">
-                          {/* <i className="fa-solid fa-phone-volume"></i> */}
+                          // <i className="fa-solid fa-phone-volume"></i> 
                           <i className="bi bi-phone"></i>
                         </div>
                         <a href="tel:+00123456789">+ 00 123 456 789</a>
@@ -2590,7 +2787,7 @@ const Home = () => {
           <div className="shape-right">
             <img src={pic31} alt="Shape" />
           </div>
-        </div>
+        </div> */}
         <div className="tj-copyright-area">
           <div className="container">
             <div className="row">
@@ -2599,23 +2796,26 @@ const Home = () => {
                   <div className="copyright-text">
                     <p>
                       Copyright © 2024{" "}
-                      <a href="#" target="_blank">
+                      <a href="" target="">
                         {" "}
-                        ThemeJunction.{" "}
+                        Iron cutting
                       </a>{" "}
                       All Rights Reserved.
                     </p>
                   </div>
                   <div className="bottom-menu">
                     <ul>
-                      <li>
-                        <a href="#">Setting & Privacy</a>
+                      <li class="text-white">
+                      Setting & Privacy
+                        {/* <a href="">Setting & Privacy</a> */}
                       </li>
-                      <li>
-                        <a href="#">FAQ</a>
+                      <li class="text-white">
+                      FAQ
+                        {/* <a href="">FAQ</a> */}
                       </li>
-                      <li>
-                        <a href="#">Support</a>
+                      <li class="text-white">
+                      Support
+                        {/* <a href="#">Support</a> */}
                       </li>
                     </ul>
                   </div>
@@ -2640,6 +2840,21 @@ const Home = () => {
         onClick={buttomtoptop}
       >
         <svg
+          className="arrowbuttomtotop"
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="25"
+          fill="currentColor"
+          class="bi bi-arrow-up"
+          id="arrowbuttomtotop"
+          viewBox="0 0 16 16"
+        >
+          <path
+            // fill-rule="evenodd"
+            d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"
+          />
+        </svg>
+        {/* <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
           height="16"
@@ -2651,14 +2866,10 @@ const Home = () => {
             fill-rule="evenodd"
             d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"
           />
-        </svg>
+        </svg> */}
       </button>
     </>
   );
 };
 
 export default Home;
-
-
-
-
