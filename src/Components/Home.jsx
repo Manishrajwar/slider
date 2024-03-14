@@ -356,11 +356,11 @@ const Home = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="about-feature-item">
+                  {/* <div className="about-feature-item">
                     <div className="feature-item">
                       <div className="feature-icon">
                         <i className="bi bi-award-fill"></i>
-                        {/* <i className="flaticon-quality"></i> */}
+                        // {/* <i className="flaticon-quality"></i> 
                       </div>
                       <div className="feature-text">
                         <span className="feature-title">ISO Certified</span>
@@ -371,7 +371,7 @@ const Home = () => {
                     <div className="feature-item">
                       <div className="feature-icon">
                         <i className="bi bi-envelope"></i>
-                        {/* <i className="flaticon-nanotechnology"></i> */}
+                        // {/* <i className="flaticon-nanotechnology"></i> 
                       </div>
                       <div className="feature-text">
                         <span className="feature-title">High Tech</span>
@@ -379,14 +379,14 @@ const Home = () => {
                         <p>In Europe</p>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                   <div className="feature-contact">
-                    <div className="about-button">
+                    {/* <div className="about-button">
                       <a className="tj-primary-btn" href="about.html">
                         Read More <i className="bi bi-arrow-bar-right"></i>
-                        {/* <i className="fa-light fa-arrow-right-from-line"></i> */}
+                       <i className="fa-light fa-arrow-right-from-line"></i>
                       </a>
-                    </div>
+                    </div> */}
                     <div className="contact-content">
                       <div className="contact-icon">
                         <i className="bi bi-telephone-inbound"></i>
@@ -432,11 +432,11 @@ const Home = () => {
                     </div>
                   </div>
                   <div className="left-image">
-                    <img src={Pic4} alt="" />
+                    <img src={roundIron} alt="" />
                   </div>
 
                   <div className="right-image">
-                    <img src={Pic5} alt="" />
+                    <img src={flatIron} alt="" />
                   </div>
                   <div className="about-shape">
                     <img src={Pic2} alt="" />
@@ -1114,7 +1114,7 @@ const Home = () => {
         {/* <!-- end: Analysis Section --> */}
         {/* 
          <!-- start: Price Section --> */}
-        <section className="tj-price-section">
+        {/* <section className="tj-price-section">
           <div className="container">
             <div className="row">
               <div className="tj-heading-area">
@@ -1173,7 +1173,7 @@ const Home = () => {
                   <div className="price-button text-center">
                     <a className="tj-light-button" href="price.html">
                       Choose Plan{" "}
-                      {/* <i className="fa-light fa-arrow-right-from-line"></i> */}
+                      // {/* <i className="fa-light fa-arrow-right-from-line"></i> 
                       <i className="bi bi-arrow-bar-right"></i>
                     </a>
                   </div>
@@ -1224,7 +1224,7 @@ const Home = () => {
                   <div className="price-button text-center">
                     <a className="tj-light-button" href="price.html">
                       Choose Plan{" "}
-                      {/* <i className="fa-light fa-arrow-right-from-line"></i> */}
+                      // {/* <i className="fa-light fa-arrow-right-from-line"></i> 
                       <i className="bi bi-arrow-bar-right"></i>
                     </a>
                   </div>
@@ -1275,7 +1275,7 @@ const Home = () => {
                   <div className="price-button text-center">
                     <a className="tj-light-button" href="price.html">
                       Choose Plan{" "}
-                      {/* <i className="fa-light fa-arrow-right-from-line"></i> */}
+                    //  {/* <i className="fa-light fa-arrow-right-from-line"></i> 
                       <i className="bi bi-arrow-bar-right"></i>
                     </a>
                   </div>
@@ -1283,7 +1283,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* <!-- end: Price Section --> */}
 
@@ -2792,8 +2792,8 @@ const Home = () => {
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
-                <div className="copyright-content-ara">
-                  <div className="copyright-text">
+                <div className="copyright-content-ara d-flex justify-content-center">
+                  <div className="copyright-text ">
                     <p>
                       Copyright © 2024{" "}
                       <a href="" target="">
@@ -2803,22 +2803,22 @@ const Home = () => {
                       All Rights Reserved.
                     </p>
                   </div>
-                  <div className="bottom-menu">
+                  {/* <div className="bottom-menu">
                     <ul>
                       <li class="text-white">
                       Setting & Privacy
-                        {/* <a href="">Setting & Privacy</a> */}
+                        <a href="">Setting & Privacy</a>
                       </li>
                       <li class="text-white">
                       FAQ
-                        {/* <a href="">FAQ</a> */}
+                        <a href="">FAQ</a>
                       </li>
                       <li class="text-white">
                       Support
-                        {/* <a href="#">Support</a> */}
+                        <a href="#">Support</a>
                       </li>
                     </ul>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

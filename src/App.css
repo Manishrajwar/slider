@@ -391,6 +391,7 @@ input[type=color] {
  	Common Classes CSS
 */
 img {
+  height: 400px;
   max-width: 100%;
 }
 
@@ -3744,6 +3745,7 @@ START: About CSS
   z-index: 1;
 }
 .about-images .left-image {
+  height: 500px;
   max-width: 310px;
   width: 100%;
   padding-bottom: 25px;
