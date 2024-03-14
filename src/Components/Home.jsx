@@ -1,5 +1,5 @@
-import React, { useRef, useState } from "react";
-import Slider from "react-slick";
+import React from "react";
+// import Slider from "react-slick";
 // import Pic1 from "../Assets/images/logos/primary-logo.png";
 import Pic2 from "../Assets/images/shapes/about-image-shape2.svg";
 import Pic3 from "../Assets/images/shapes/circle-shape.svg";
@@ -7,34 +7,34 @@ import Pic4 from "../Assets/images/about/about-2.jpg";
 import Pic5 from "../Assets/images/about/about-1.jpg";
 import Pic6 from "../Assets/images/shapes/about-right-shape.svg";
 import Pic7 from "../Assets/images/shapes/about-left-shape.svg";
-import Pic8 from "../Assets/images/shapes/service-left-shape.svg";
+// import Pic8 from "../Assets/images/shapes/service-left-shape.svg";
 // import Pic9 from "../Assets/images/shapes/service-item-shape.svg";
-import Pic10 from "../Assets/images/steps/steps-1.jpg";
-import Pic11 from "../Assets/images/shapes/steps-right-shape.svg";
-import Pic12 from "../Assets/images/steps/steps-2.jpg";
-import pic13 from "../Assets/images/steps/chart.png";
-import pic14 from "../Assets/images/shapes/project-top-shape.svg";
-import pic15 from "../Assets/images/shapes/project-bottom-shape.svg";
-import Pic16 from "../Assets/images/testimonial/testimonial-1.png";
-import pic17 from "../Assets/images/icon/quote.svg";
-import pic18 from "../Assets/images/shapes/testimonial-top-shape.svg";
-import pic19 from "../Assets/images/shapes/testimonial-bottom-shape.svg";
-import pic20 from "../Assets/images/blog/blog-1.jpg";
-import pic21 from "../Assets/images/blog/blog-2.jpg";
-import pic22 from "../Assets/images/blog/blog-3.jpg";
-import pic23 from "../Assets/images/shapes/blog-bg-shape.svg";
-import pic24 from "../Assets/images/brand/brand-1.png";
-import pic25 from "../Assets/images/brand/brand-2.png";
-import pic26 from "../Assets/images/brand/brand-3.png";
-import pic27 from "../Assets/images/brand/brand-4.png";
-import pic28 from "../Assets/images/brand/brand-5.png";
-import pic29 from "../Assets/images/icon/newsletter-left.svg";
-import pic30 from "../Assets/images/icon/newsletter-right.svg";
-import pic31 from "../Assets/images/shapes/footer-top-shape.svg";
-import pic32 from "../Assets/images/logos/secondary-logo.png";
+// import Pic10 from "../Assets/images/steps/steps-1.jpg";
+// import Pic11 from "../Assets/images/shapes/steps-right-shape.svg";
+// import Pic12 from "../Assets/images/steps/steps-2.jpg";
+// import pic13 from "../Assets/images/steps/chart.png";
+// import pic14 from "../Assets/images/shapes/project-top-shape.svg";
+// import pic15 from "../Assets/images/shapes/project-bottom-shape.svg";
+// import Pic16 from "../Assets/images/testimonial/testimonial-1.png";
+// import pic17 from "../Assets/images/icon/quote.svg";
+// import pic18 from "../Assets/images/shapes/testimonial-top-shape.svg";
+// import pic19 from "../Assets/images/shapes/testimonial-bottom-shape.svg";
+// import pic20 from "../Assets/images/blog/blog-1.jpg";
+// import pic21 from "../Assets/images/blog/blog-2.jpg";
+// import pic22 from "../Assets/images/blog/blog-3.jpg";
+// import pic23 from "../Assets/images/shapes/blog-bg-shape.svg";
+// import pic24 from "../Assets/images/brand/brand-1.png";
+// import pic25 from "../Assets/images/brand/brand-2.png";
+// import pic26 from "../Assets/images/brand/brand-3.png";
+// import pic27 from "../Assets/images/brand/brand-4.png";
+// import pic28 from "../Assets/images/brand/brand-5.png";
+// import pic29 from "../Assets/images/icon/newsletter-left.svg";
+// import pic30 from "../Assets/images/icon/newsletter-right.svg";
+// import pic31 from "../Assets/images/shapes/footer-top-shape.svg";
+// import pic32 from "../Assets/images/logos/secondary-logo.png";
 import pic33 from "../Assets/images/shapes/footer-left-shape.svg";
 import pic34 from "../Assets/images/shapes/footer-right-shape.svg";
-import pic35 from "../Assets/images/steps/steps-3.jpg";
+// import pic35 from "../Assets/images/steps/steps-3.jpg";
 import roundIron from "../Assets/images/round_Iron.jpg";
 import flatIron from "../Assets/images/flate.jpg";
 // import piccarouel1 from "../Assets/images/portfolio/portfolio-1.jpg";
@@ -95,13 +95,13 @@ const Home = () => {
   //   );
   // };
 
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
+  // var settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  // };
 
   const buttomtoptop = () => {
     window.scrollTo({
@@ -112,7 +112,7 @@ const Home = () => {
 
   // ! manish code
 
-  const sliderRef = useRef(null);
+  // const sliderRef = useRef(null);
 
   // const handleWheel = (e) => {
   //   e.preventDefault();
@@ -122,22 +122,22 @@ const Home = () => {
   //   }
   // };
 
-  const goToPrevSlide = () => {
-    if (sliderRef.current) {
-      sliderRef.current.scrollBy({ left: -325, behavior: "smooth" });
-    }
-  };
+  // const goToPrevSlide = () => {
+  //   if (sliderRef.current) {
+  //     sliderRef.current.scrollBy({ left: -325, behavior: "smooth" });
+  //   }
+  // };
 
-  const goToNextSlide = () => {
-    if (sliderRef.current) {
-      sliderRef.current.scrollBy({ left: 325, behavior: "smooth" });
-    }
-  };
+  // const goToNextSlide = () => {
+  //   if (sliderRef.current) {
+  //     sliderRef.current.scrollBy({ left: 325, behavior: "smooth" });
+  //   }
+  // };
 
   // for another container slider
-  const [activeContainerIndex, setActiveContainerIndex] = useState(0);
+  // const [activeContainerIndex, setActiveContainerIndex] = useState(0);
 
-  const totalContainers = 4; // Total number of containers
+  // const totalContainers = 4; // Total number of containers
 
   return (
     <>
